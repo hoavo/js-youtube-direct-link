@@ -1,0 +1,43 @@
+{
+  "name": "js-youtube-direct-link",
+  "version": "1.0.0",
+  "description": "Javascript library get direct link for youtube video",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel --out-dir dist src",
+    "prebuild": "rimraf dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoavo/js-youtube-direct-link.git"
+  },
+  "keywords": [
+    "youtube",
+    "direct",
+    "link",
+    "javascript"
+  ],
+  "author": "Hoa vo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hoavo/js-youtube-direct-link/issues"
+  },
+  "homepage": "https://github.com/hoavo/js-youtube-direct-link#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "query-string": "^6.7.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "rimraf": "^2.6.3"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-2"
+    ]
+  }
+}
