@@ -8,7 +8,10 @@ app.get("/youtube", (req, res) => {
   try {
     youtubedl.getInfo(url, [], function(err, info) {
       if (err) throw err;
-      const video = { success: true, url: info.url };
+      const videos = info.formats
+        ? info.formats.filter(item => item.ext === "mp4")
+        : [];
+      const video = { success: true, url: info.url, videos };
       res.json(video);
     });
   } catch (error) {
